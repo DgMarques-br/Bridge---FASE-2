@@ -93,7 +93,7 @@ sequenceDiagram
     Relatorio-->>Cliente: return
  ```
 
-##🛡️ Diretrizes Técnicas e Princípios Aplicados
+## 🛡️ Diretrizes Técnicas e Princípios Aplicados
 
 1. Injeção de Dependência
 É estritamente vedado o uso de instanciação direta (operador new) do exportador concreto dentro das classes filhas de Relatorio. A injeção da dependência ocorre exclusivamente via Construtor, garantindo o Princípio da Inversão de Dependência (DIP). Um método setExportador foi incluído para permitir a troca do formato em tempo de execução.
